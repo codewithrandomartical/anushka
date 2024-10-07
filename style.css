@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat");
+
+.Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the container */
+}
+
+.Picture {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #e77373;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+  transform: translate(-50%, -50%);
+  user-select: none;
+  cursor: pointer;
+}
+
+.Picture-video {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #ff004c;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+  transform: translate(-50%, -50%);
+  user-select: none;
+  cursor: pointer;
+}
+
+.Picture-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+.Picture-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.Picture-note-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.Network {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.Network-video {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.Network img {
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+}
+
+.Network-video img {
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+}
+
+/* Other styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Caveat', serif;
+  overflow: hidden;
+
+  /* Background Image Properties */
+  background-image: url('background.jpg'); /* Specify your image path */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Keep the background fixed during scrolling */
+}
